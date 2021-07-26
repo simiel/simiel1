@@ -1,0 +1,42 @@
+.home-container {
+  font-size: 2.25rem;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 400px;
+  margin-left: 50px;
+  margin-right: 90px;
+}
+
+h1 {
+  padding-bottom: 15px;
+}
+
+.h1-name-color {
+  color: var(--mid-brown);
+  font-weight: 400;
+}
+
+.mouse-scroll-indicator {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+}
+
+/*************
+MEDIA QUERIES
+*************/
+
+@media only screen and (max-width: 900px) {
+  .home-content {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .home-content {
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,70 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.15;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--light-brown);
+}
+
+.App {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  grid-template-rows: 90px 1fr 90px;
+}
+
+.first-left-column {
+  width: 90px;
+  height: 100%;
+
+  border-right: 1px solid var(--dark-brown);
+  border-bottom: 1px solid var(--dark-brown);
+}
+
+:root {
+  --background-color: #ffffff;
+  --light-brown: #63b1c3;
+  --mid-brown: #6f9bdc;
+  --dark-brown: #727390;
+}
+
+.second-left-column {
+  width: 90px;
+  height: 100%;
+
+  border-right: 1px solid var(--dark-brown);
+}
+
+.third-left-column {
+  width: 90px;
+  height: 100%;
+
+  border-right: 1px solid var(--dark-brown);
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: var(--dark-brown);
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.menu-button:hover {
+  color: var(--mid-brown);
+}
