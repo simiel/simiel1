@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.15;
+}
+
+:root{
+    --background-color: #98B8EE;
+    --light-blue: #5089EB;
+    --mid-blue: #3F6BB8;
+    --dark-blue: #243E6B;
+    font-size: 100%;
+}
+
+body{
+    color: var(--dark-blue);
+    background-color: var(--background-color);
+   
+}
+
+.app{
+    background-color: var(--background-color);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 90px 1fr 90px;
+}
+
+.first-left-column{
+    border-right: 1px solid var(--dark-blue);
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+.second-left-column{
+    border-right: 1px solid var(--dark-blue);
+}
+
+.third-left-column{
+    border-right: 1px solid var(--dark-blue);
+}
+
+.navigation{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 90px 0 30px;
+    border-bottom: 1px solid var(--dark-blue);
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.nav-icons ul{
+    display: flex;
+    font-size: 2rem;
+}
+
+.nav-icons li{
+    margin-right: 20px;
+}
+
+.nav-pages ul{
+    display: flex;
+}
+
+.nav-pages li{
+    margin-right: 20px;
+}
+
+.home-container{
+    display: flex;
+}
+
+.home-content{
+    margin-left: 50px;
+    display: flex;
+    /* align-items: flex-end; */
+    flex-direction: column;
+    font-size: 1.5rem;
+    height: 50%;
+    margin-top: auto;
+    color: var(--light-blue);
+}
+
+.h1-name-color {
+    color: var(--dark-blue);
+    font-weight: 400;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    color: var(--light-blue);
+}
+
+footer p{
+    margin: 0 5px;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  .nav-icons {
+    display: none;
+  }
+
+  .nav-pages {
+    display: none;
+  }
+}
